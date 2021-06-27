@@ -38,7 +38,7 @@ For more details, explore the [Data Analysis notebook](https://github.com/Sid-da
 
 
 ## [Model Exploration](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Model%20Exploration.ipynb)
-We test the performance of ~15 different ML classifiers on:
+We test the performance of ~15 different ML classifiers using 10-fold cross-validation on:
 
 ### 1) Dataset balanced using synthetic data- [SMOTE](https://arxiv.org/pdf/1106.1813)
 ![CV_results_SMOTE](./Plots/CV_results_SMOTE.png)
@@ -47,4 +47,13 @@ We test the performance of ~15 different ML classifiers on:
 ### 2) Original Dataset
 ![CV_results_original](./Plots/CV_results_original.png)
 
-So as we can see, balancing the dataset using synthetic data does not lead to good results. We proceed with the imbalanced dataset.
+It might be tempting to see the high accuracy and quickly declare the model as a good one, alas things are not so simple for Imbalanced Classification problems. From the bunch of classification metrics available, we use **precision-recall** over **AUC score** and standard accuracy score (since its more advisable to do so for imbalanced classes). The **F1 score** is calculated as the geometric mean of precision and recall and we choose it as our primary metric to shortlist models!
+
+#### Note: 
+- **Precision:**  Out of all the predicted transaction matches, how many were predicted correctly by the model?
+- **Recall:** Out of all the transactions, how many matches were correctly identified by the model?
+
+Furthermore, we would try to have a higher recall(sensitivity) since we are interested in identifying more matches.
+
+So as we can see, balancing the dataset using synthetic data does not lead to good results. We proceed with the imbalanced dataset for all further tasks.
+
