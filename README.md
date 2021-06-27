@@ -7,4 +7,4 @@ This repository contains 4 notebooks and should be explored in the following ord
 4) [Finalizing Model & Generating Predictions.ipynb](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Finalizing%20Model%20%26%20Generating%20Predictions.ipynb)
 
 ## Data Cleaning
-![image info](./plots/Imbalance_Comparison.png)
+![Imbalance_Comparison](./Plots/Imbalance_Comparison.png)
