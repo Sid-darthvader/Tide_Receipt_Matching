@@ -1,5 +1,7 @@
 # Tide Receipt Matching
 
+
+
 The problem falls into the category of imbalanced binary classification.
 
 This repository contains 4 notebooks and should be explored in the following order:
@@ -51,6 +53,9 @@ We test the performance of ~15 different ML classifiers using 10-fold cross-vali
 
 ### 2) Original Dataset
 ![CV_results_original](./Plots/CV_results_original.png)
+
+#### Note: 
+Using pycaret, several pre-processing techniques (such as adding interaction terms to the existing features and/or normalizing the data) were experimented, however none of them seemed to offer better accuracies than what are given above.
 
 It might be tempting to see the high accuracy and quickly declare the model as a good one, alas things are not so simple for Imbalanced Classification problems. From the bunch of classification metrics available, we use **precision-recall** over **AUC score** and standard accuracy score (since its more advisable to do so for imbalanced classes). The **F1 score** is calculated as the geometric mean of precision and recall and we choose it as our primary metric to shortlist models!
 
@@ -115,5 +120,7 @@ Our model assigns equal likelihood to feature_ids: "10,005" & "10,006" which is 
 
 ## Recommendations to the team
 
-As seen during Data Analysis, even for the matching entries, the feature values of the matching vector are predominantly 0s. So it would be worth having another look at how these features are being created and see if we can somehow arrive at more informative feature values.
+As seen during Data Analysis, even for the matching entries, the feature values of the matching vector are predominantly 0s. 
+Due to this even complex ML models are unable to identify the correct match for a given receipt.
+Perhaps it would be best to re-visit how the values in these matching vectors are being created and see if we can re-define them to reduce the skewness of the feature values towards 0.
 
