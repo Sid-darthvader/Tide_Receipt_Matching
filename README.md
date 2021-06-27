@@ -34,6 +34,6 @@ Things get slightly better and we have marginally better distributed featuress o
 
 ![Feature Distribution Full Data](./Plots/Feature_distribution_only_matches.png)
 
-For more details, explore the [Data Analysis notebook]((https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Data%20Analysis.ipynb)).
+For more details, explore the [Data Analysis notebook](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Data%20Analysis.ipynb).
 
 
