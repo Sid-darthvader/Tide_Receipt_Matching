@@ -81,3 +81,9 @@ The model blends together the probabities returned by XGBoost, RandomForest and 
 ![image](https://user-images.githubusercontent.com/31122624/123548398-451a3d80-d782-11eb-85e8-4f9fcd4745a0.png)
 
 Since the tuned XGBoost model seems to be performing the best amongst all the models based on the criteria that we defined earlier, we choose it as our final model.
+
+
+## [Finalazing Model & Generating Predictions](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Finalizing%20Model%20%26%20Generating%20Predictions.ipynb)
+We generate a bunch of different evaluation plots for our tuned XBGboost classifier.
+
+![image](https://user-images.githubusercontent.com/31122624/123548821-fe2d4780-d783-11eb-904d-2c772345df3e.png)
