@@ -12,6 +12,8 @@ This repository contains 4 notebooks and should be explored in the following ord
 3) [Model Exploration.ipynb](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Model%20Exploration.ipynb)
 4) [Finalizing Model & Generating Predictions.ipynb](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Finalizing%20Model%20%26%20Generating%20Predictions.ipynb)
 
+Do make sure that you install all dependencies mentioned in [requirements.txt](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/requirements.txt)
+
 ## [Data Cleaning](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Data%20Cleaning.ipynb)
 The original dataset had a large imbalance amongst the 2 classes (Match v/s Non-Match transactions). This would have led to sub-par performance of ML models in identifying the correct matching transaction for a given receipt id.
 
