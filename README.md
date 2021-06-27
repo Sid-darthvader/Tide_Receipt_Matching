@@ -4,7 +4,7 @@ For each *feature_transaction_id*, by defining the response variable *is_match* 
 
             is_match = 1 if matched_transaction_id = feature_transaction_id
                        0 otherwise
-The problem has been converted into a binary classification problem. Moreover, since the class distribution of our reponse variable *is_match* is highly skewed, the problem falls under the class of an imbalanced binary classification problem. 
+The problem has been converted into a supervised learning binary classification problem. Moreover, since the class distribution of our reponse variable *is_match* is highly skewed, the problem falls under the class of an imbalanced binary classification problem. 
 
 This repository contains 4 notebooks and should be explored in the following order:
 1) [Data Cleaning.ipynb](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Data%20Cleaning.ipynb)
