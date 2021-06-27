@@ -28,7 +28,7 @@ Further, we can see how other features of the matching vector are distributed
 
 ![Feature Distribution Full Data](./Plots/Feature_distribution_full_data.png)
 
-Due to the heavyily imbalanced classes almost all features--except *DateMappingMatch* & *AmountMappingMatch*)-- are predominantly populated with 0s.
+Due to the heavyily imbalanced classes almost all features--except *DateMappingMatch* & *AmountMappingMatch*-- are predominantly populated with 0s.
 
 Things get slightly better and we have marginally better distributed featuress once we restrict the data to only the matched entries. However, the distribution is still very skewed which makes it extremely challenging to build good classification models.
 
