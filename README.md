@@ -70,7 +70,7 @@ Furthermore, we would try to have a higher recall(sensitivity) since we are inte
 So as we can see, balancing the dataset using synthetic data does not lead to good results. While xgboost is able to obtain a really high recall, unfortunately it comes at the cost of precision. 
 On the other hand, the original dataset seems to offer a more balanced precision-recall score.
 
-We proceed with the imbalanced dataset for all further tasks.
+We proceed with the imbalanced dataset('df_cleaned.csv') for all further tasks.
 
 ### Shortlisted Models
 Based on the 10-fold CV results and some other conditions (details in the Modeling notebook), we shortlist the following 3 models and tune their hyperparameters using randomized grid search and finally evaluate their performance on a holdout set:
@@ -101,7 +101,7 @@ Since the tuned XGBoost model seems to be performing the best amongst all the mo
 
 We generate a bunch of different evaluation plots for our tuned XGBoost classifier.
 
-![image](https://user-images.githubusercontent.com/31122624/123548821-fe2d4780-d783-11eb-904d-2c772345df3e.png)
+![image](https://user-images.githubusercontent.com/31122624/123552274-0c369480-d793-11eb-9f13-d70bb9d107c8.png)
 
 Furthermore, we also calculate feature importance
 
