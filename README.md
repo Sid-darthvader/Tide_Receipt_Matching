@@ -103,9 +103,9 @@ We generate a bunch of different evaluation plots for our tuned XGBoost classifi
 
 ![image](https://user-images.githubusercontent.com/31122624/123552274-0c369480-d793-11eb-9f13-d70bb9d107c8.png)
 
-**For the end user, having a recall of $0.615$ for the positive class on the holdout set means that our tuned XGBoost classifer is able to identify 61.5% of the correct matches when used in the real world. Similarly a recall of $0.977$ for the negative class means that it is able to correctly identify 97.7% of the non-match transactions.**
+**For the end user, having a recall of 0.615 for the positive class on the holdout set means that our tuned XGBoost classifer is able to identify 61.5% of the correct matches when used in the real world. Similarly a recall of 0.977 for the negative class means that it is able to correctly identify 97.7% of the non-match transactions.**
 
-**On the other hand, having a precision of $0.799$ for the the positive class on the holdout set means that out of all matches predicted by our tuned XGBoost classifer ~80% of them are correct. Similarly a precision of $0.944$ for the negative class means that out of all the non-matches identified, 94.4% of them are correct.**
+**On the other hand, having a precision of 0.799 for the the positive class on the holdout set means that out of all matches predicted by our tuned XGBoost classifer ~80% of them are correct. Similarly a precision of 0.944 for the negative class means that out of all the non-matches identified, 94.4% of them are correct.**
 
 **CAVEAT: An AUC score of 0.93 signifies that our model is able to differentiate between the two classes quite well. However, the AUC score is only meaningful if the class-distribution is balanced. Hence, it would not be an ideal metric to consider for our problem!**
 
