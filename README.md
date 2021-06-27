@@ -134,4 +134,4 @@ As seen during Data Analysis, even for the matching entries, the feature values 
 Due to this even complex ML models are unable to identify the correct match for a given receipt.
 Perhaps it would be best to re-visit how the values in these matching vectors are being created and see if we can re-define them to reduce the skewness of the feature values towards 0.
 
-Using techniques of [causal discovery](https://arxiv.org/pdf/2103.02582) it would also be interesting to see which features have a causal impact (versus a simple correlational match) on the transaction being a match. Using causal drivers as features in our predictive models might help us achieve a better precision-recall balance!
+Furthermore, by using [causal discovery](https://arxiv.org/pdf/2103.02582) methods it would also be interesting to see which features have a causal impact (versus a simple correlational match) on the transaction being a match. Using causal drivers as features in our predictive models might help us achieve a better precision-recall balance!
