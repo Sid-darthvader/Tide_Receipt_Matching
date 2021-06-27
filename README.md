@@ -93,7 +93,7 @@ We generate a bunch of different evaluation plots for our tuned XGBoost classifi
 
 Furthermore, we also calculate feature importance
 
-![Feature_imp](./Plots/Feature Importance.png)
+![image](https://user-images.githubusercontent.com/31122624/123549775-0d15f900-d788-11eb-9b61-f4e4a4e52773.png)
 
 ### Generating predictions on new data
 
