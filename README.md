@@ -37,3 +37,14 @@ Things get slightly better and we have marginally better distributed featuress o
 For more details, explore the [Data Analysis notebook](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Data%20Analysis.ipynb).
 
 
+## [Model Exploration](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Model%20Exploration.ipynb)
+We test the performance of ~15 different ML classifiers on:
+
+### 1) Dataset balanced using synthetic data- [SMOTE](https://arxiv.org/pdf/1106.1813)
+![CV_results_SMOTE](./Plots/CV_results_SMOTE.png)
+
+
+### 2) Original Dataset
+![CV_results_original](./Plots/CV_results_original.png)
+
+So as we can see, balancing the dataset using synthetic data does not lead to good results. We proceed with the imbalanced dataset.
