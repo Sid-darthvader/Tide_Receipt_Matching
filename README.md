@@ -1,6 +1,6 @@
 # Tide Receipt Matching
 
-The problem falls into the category of imblanced binary classification.
+The problem falls into the category of imbalanced binary classification.
 
 This repository contains 4 notebooks and should be explored in the following order:
 1) [Data Cleaning.ipynb](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Data%20Cleaning.ipynb)
@@ -60,3 +60,24 @@ On the other hand, the original dataset seems to offer a more balanced precision
 
 We proceed with the imbalanced dataset for all further tasks.
 
+### Shortlisted Models
+Based on the 10-fold CV results and some other conditions (details in the Modeling notebook), we shortlist the following 3 models and tune their hyperparameters using randomized grid search and finally evaluate their performance on a holdout set:
+
+### 1) XGBoost
+
+![image](https://user-images.githubusercontent.com/31122624/123548312-e94fb480-d781-11eb-948e-5c38c16e5241.png)
+
+### 2) RandomForest
+
+![image](https://user-images.githubusercontent.com/31122624/123548336-01273880-d782-11eb-8cc0-8c89298c7945.png)
+
+### 3) NaiveBayes
+
+![image](https://user-images.githubusercontent.com/31122624/123548350-12704500-d782-11eb-93e4-9a4fe86a82e0.png)
+
+### 4) Soft Voting Ensemble Classifier
+The model blends together the probabities returned by XGBoost, RandomForest and NaiveBayes.
+
+![image](https://user-images.githubusercontent.com/31122624/123548398-451a3d80-d782-11eb-85e8-4f9fcd4745a0.png)
+
+Since the tuned XGBoost model seems to be performing the best amongst all the models based on the criteria that we defined earlier, we choose it as our final model.
