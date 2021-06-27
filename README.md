@@ -55,5 +55,8 @@ It might be tempting to see the high accuracy and quickly declare the model as a
 
 Furthermore, we would try to have a higher recall(sensitivity) since we are interested in identifying more matches.
 
-So as we can see, balancing the dataset using synthetic data does not lead to good results. We proceed with the imbalanced dataset for all further tasks.
+So as we can see, balancing the dataset using synthetic data does not lead to good results. While xgboost is able to obtain a really high recall, unfortunately it comes at the cost of precision. 
+On the other hand, the original dataset seems to offer a more balanced precision-recall score.
+
+We proceed with the imbalanced dataset for all further tasks.
 
