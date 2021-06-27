@@ -91,9 +91,13 @@ We generate a bunch of different evaluation plots for our tuned XGBoost classifi
 
 ![image](https://user-images.githubusercontent.com/31122624/123548821-fe2d4780-d783-11eb-904d-2c772345df3e.png)
 
+Furthermore, we also calculate feature importance
+
+![Feature_imp](./Plots/Feature Importance.png)
+
 ### Generating predictions on new data
 
-We create a new function that can be used to order a set of transactions for a given receipt_id according to their likelihood of match.
+We create a new function (***order_by_likelihood_of_match()***) that can be used to order a set of transactions for a given receipt_id according to their likelihood of match.
 
 For details on how this function works and how to use it with new data please refer to the documentaion provided in the [associated notebook](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Finalizing%20Model%20%26%20Generating%20Predictions.ipynb).
 
