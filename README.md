@@ -111,7 +111,7 @@ We generate a bunch of different evaluation plots for our tuned XGBoost classifi
 
 **CAVEAT: An AUC score of 0.93 signifies that our model is able to differentiate between the two classes quite well. However, the AUC score is only meaningful if the class-distribution is balanced. Hence, it would not be an ideal metric to consider for our problem!**
 
-Furthermore, we also calculate feature importance
+Furthermore, we also calculate feature importance and find that *DateMappingMatch* , *ShortNameMatch=1*, *TimeMappingMatch=1*, *Different_Predicted_Match=1* & *DescriptionMatch* seem to be the most important factors that help in differentiating potential matches from non-matches.
 
 ![image](https://user-images.githubusercontent.com/31122624/123549775-0d15f900-d788-11eb-9b61-f4e4a4e52773.png)
 
