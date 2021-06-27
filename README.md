@@ -113,3 +113,7 @@ For this entry, we already know that the correct match corresponds to feature_id
 
 Our model assigns equal likelihood to feature_ids: "10,005" & "10,006" which is not ideal but very close to the ground truth given the huge imbalance in the trained dataset!
 
+## Recommendations to the team
+
+As seen during Data Analysis, even for the matching entries, the feature values of the matching vector are predominantly 0s. So it would be worth having another look at how these features are being created and see if we can somehow arrive at more informative feature values.
+
