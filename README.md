@@ -84,6 +84,23 @@ Since the tuned XGBoost model seems to be performing the best amongst all the mo
 
 
 ## [Finalazing Model & Generating Predictions](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Finalizing%20Model%20%26%20Generating%20Predictions.ipynb)
-We generate a bunch of different evaluation plots for our tuned XBGboost classifier.
+
+### Evaluating the trained models' performance
+
+We generate a bunch of different evaluation plots for our tuned XGBoost classifier.
 
 ![image](https://user-images.githubusercontent.com/31122624/123548821-fe2d4780-d783-11eb-904d-2c772345df3e.png)
+
+### Generating predictions on new data
+
+We create a new function that can be used to order a set of transactions for a given receipt_id according to their likelihood of match.
+
+For details on how this function works and how to use it with new data please refer to the documentaion provided in the [associated notebook](https://github.com/Sid-darthvader/Tide_Receipt_Matching/blob/main/Finalizing%20Model%20%26%20Generating%20Predictions.ipynb).
+
+As a pilot run of our newly created function, we calculate the likelihood of matches from our trained model on corrusponding to the receipt_id = "10,001" (the first entry in our dataset).
+For this entry, we already know that the correct match corresponds to feature_id = "10,605".
+
+![image](https://user-images.githubusercontent.com/31122624/123549339-3b92d480-d786-11eb-80fb-6b83e67b5b55.png)
+
+Our model assigns equal likelihood to feature_ids: "10,005" & "10,006" which is not ideal but very close to the ground truth given the huge imbalance in the trained dataset!
+
